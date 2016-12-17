@@ -3,7 +3,7 @@ package com.service.bean;
 import java.util.Date;
 
 public class Learn {
-	private int stu_phone;
+	private String stu_email;
 	private String cou_id;
 	private int sec_num;
 	private Date lea_pro_time;
@@ -12,11 +12,11 @@ public class Learn {
 	private Date not_date;
 	private float lea_grade;
 	private Date lea_dateline;
-	public int getStu_phone() {
-		return stu_phone;
+	public String getStu_email() {
+		return stu_email;
 	}
-	public void setStu_phone(int stu_phone) {
-		this.stu_phone = stu_phone;
+	public void setStu_email(String stu_email) {
+		this.stu_email = stu_email;
 	}
 	public String getCou_id() {
 		return cou_id;
@@ -66,5 +66,6 @@ public class Learn {
 	public void setLea_dateline(Date lea_dateline) {
 		this.lea_dateline = lea_dateline;
 	}
+	
 	
 }

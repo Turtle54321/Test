@@ -3,19 +3,19 @@ package com.service.bean;
 import java.util.Date;
 
 public class Reply {
-	private int rep_phone;
+	private String rep_email;
 	private String rep_status;
 	private Date rep_time;
-	private int pos_phone;
+	private String pos_email;
 	private String cou_id;
 	private Date pos_time;
 	private String rep_content;
 	private int rep_good;
-	public int getRep_phone() {
-		return rep_phone;
+	public String getRep_email() {
+		return rep_email;
 	}
-	public void setRep_phone(int rep_phone) {
-		this.rep_phone = rep_phone;
+	public void setRep_email(String rep_email) {
+		this.rep_email = rep_email;
 	}
 	public String getRep_status() {
 		return rep_status;
@@ -29,11 +29,11 @@ public class Reply {
 	public void setRep_time(Date rep_time) {
 		this.rep_time = rep_time;
 	}
-	public int getPos_phone() {
-		return pos_phone;
+	public String getPos_email() {
+		return pos_email;
 	}
-	public void setPos_phone(int pos_phone) {
-		this.pos_phone = pos_phone;
+	public void setPos_email(String pos_email) {
+		this.pos_email = pos_email;
 	}
 	public String getCou_id() {
 		return cou_id;
@@ -59,4 +59,5 @@ public class Reply {
 	public void setRep_good(int rep_good) {
 		this.rep_good = rep_good;
 	}
+	
 }

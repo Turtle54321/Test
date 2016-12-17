@@ -3,16 +3,16 @@ package com.service.bean;
 import java.util.Date;
 
 public class Buy {
-	private int stu_phone;
+	private String stu_email;
 	private String cou_id;
 	private float buy_price;
 	private Date buy_date;
 	private byte buy_state;
-	public int getStu_phone() {
-		return stu_phone;
+	public String getStu_email() {
+		return stu_email;
 	}
-	public void setStu_phone(int stu_phone) {
-		this.stu_phone = stu_phone;
+	public void setStu_email(String stu_email) {
+		this.stu_email = stu_email;
 	}
 	public String getCou_id() {
 		return cou_id;
@@ -38,5 +38,6 @@ public class Buy {
 	public void setBuy_state(byte buy_state) {
 		this.buy_state = buy_state;
 	}
+	
 	
 }

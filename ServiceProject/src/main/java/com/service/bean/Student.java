@@ -1,18 +1,18 @@
 package com.service.bean;
 
 public class Student {
-	private int stu_phone;
+	private String stu_email;
 	private String stu_nickname;
 	private String stu_password;
 	private String stu_sex;
 	private String stu_name;
 	private String stu_level;
 	private String stu_inter;
-	public int getStu_phone() {
-		return stu_phone;
+	public String getStu_email() {
+		return stu_email;
 	}
-	public void setStu_phone(int stu_phone) {
-		this.stu_phone = stu_phone;
+	public void setStu_email(String stu_email) {
+		this.stu_email = stu_email;
 	}
 	public String getStu_nickname() {
 		return stu_nickname;
@@ -50,5 +50,6 @@ public class Student {
 	public void setStu_inter(String stu_inter) {
 		this.stu_inter = stu_inter;
 	}
+	
 	
 }

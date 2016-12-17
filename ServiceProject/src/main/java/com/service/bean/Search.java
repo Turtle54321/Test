@@ -3,14 +3,14 @@ package com.service.bean;
 import java.util.Date;
 
 public class Search {
-	private int stu_phone;
+	private String stu_email;
 	private Date sea_date;
 	private String sea_content;
-	public int getStu_phone() {
-		return stu_phone;
+	public String getStu_email() {
+		return stu_email;
 	}
-	public void setStu_phone(int stu_phone) {
-		this.stu_phone = stu_phone;
+	public void setStu_email(String stu_email) {
+		this.stu_email = stu_email;
 	}
 	public Date getSea_date() {
 		return sea_date;
@@ -24,5 +24,6 @@ public class Search {
 	public void setSea_content(String sea_content) {
 		this.sea_content = sea_content;
 	}
+	
 	
 }

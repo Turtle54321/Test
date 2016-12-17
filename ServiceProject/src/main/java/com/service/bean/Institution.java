@@ -6,7 +6,6 @@ public class Institution {
 	private String ins_renum;
 	private String ins_name;
 	private String ins_password;
-	private int ins_phone;
 	private Date ins_join_date;
 	private String ins_intro;
 	private String ins_email;
@@ -29,12 +28,7 @@ public class Institution {
 	public void setIns_password(String ins_password) {
 		this.ins_password = ins_password;
 	}
-	public int getIns_phone() {
-		return ins_phone;
-	}
-	public void setIns_phone(int ins_phone) {
-		this.ins_phone = ins_phone;
-	}
+	
 	public Date getIns_join_date() {
 		return ins_join_date;
 	}

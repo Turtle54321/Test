@@ -12,7 +12,7 @@ public class Course {
 	private String cou_intro;
 	private Date cou_time;
 	private String cou_teach_way;
-	private int tea_phone;
+	private String tea_email;
 	private String cou_outline;
 	private String cou_ann;
 	public String getCou_id() {
@@ -69,11 +69,11 @@ public class Course {
 	public void setCou_teach_way(String cou_teach_way) {
 		this.cou_teach_way = cou_teach_way;
 	}
-	public int getTea_phone() {
-		return tea_phone;
+	public String getTea_email() {
+		return tea_email;
 	}
-	public void setTea_phone(int tea_phone) {
-		this.tea_phone = tea_phone;
+	public void setTea_email(String tea_email) {
+		this.tea_email = tea_email;
 	}
 	public String getCou_outline() {
 		return cou_outline;
@@ -87,5 +87,6 @@ public class Course {
 	public void setCou_ann(String cou_ann) {
 		this.cou_ann = cou_ann;
 	}
+	
 	
 }

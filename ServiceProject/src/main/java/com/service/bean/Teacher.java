@@ -1,7 +1,7 @@
 package com.service.bean;
 
 public class Teacher {
-	private int tea_phone;
+	private String tea_email;
 	private String tea_password;
 	private String tea_name;
 	private String tea_nikename;
@@ -9,13 +9,13 @@ public class Teacher {
 	private String tea_expert;
 	private String tea_background;
 	private String tea_self_intro;
-	private String tea_school_age;
+	private int tea_school_age;
 	private String tea_state;
-	public int getTea_phone() {
-		return tea_phone;
+	public String getTea_email() {
+		return tea_email;
 	}
-	public void setTea_phone(int tea_phone) {
-		this.tea_phone = tea_phone;
+	public void setTea_email(String tea_email) {
+		this.tea_email = tea_email;
 	}
 	public String getTea_password() {
 		return tea_password;
@@ -59,10 +59,10 @@ public class Teacher {
 	public void setTea_self_intro(String tea_self_intro) {
 		this.tea_self_intro = tea_self_intro;
 	}
-	public String getTea_school_age() {
+	public int getTea_school_age() {
 		return tea_school_age;
 	}
-	public void setTea_school_age(String tea_school_age) {
+	public void setTea_school_age(int tea_school_age) {
 		this.tea_school_age = tea_school_age;
 	}
 	public String getTea_state() {
@@ -71,5 +71,6 @@ public class Teacher {
 	public void setTea_state(String tea_state) {
 		this.tea_state = tea_state;
 	}
+	
 	
 }

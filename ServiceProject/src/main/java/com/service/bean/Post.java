@@ -3,17 +3,17 @@ package com.service.bean;
 import java.util.Date;
 
 public class Post {
-	private int pos_phone;
+	private String pos_eamil;
 	private String pos_status;
 	private Date pos_time;
 	private String cou_id;
 	private String pos_content;
 	private int pos_good;
-	public int getPos_phone() {
-		return pos_phone;
+	public String getPos_eamil() {
+		return pos_eamil;
 	}
-	public void setPos_phone(int pos_phone) {
-		this.pos_phone = pos_phone;
+	public void setPos_eamil(String pos_eamil) {
+		this.pos_eamil = pos_eamil;
 	}
 	public String getPos_status() {
 		return pos_status;
@@ -45,4 +45,5 @@ public class Post {
 	public void setPos_good(int pos_good) {
 		this.pos_good = pos_good;
 	}
+	
 }

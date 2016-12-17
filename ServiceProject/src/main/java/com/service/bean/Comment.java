@@ -3,16 +3,16 @@ package com.service.bean;
 import java.util.Date;
 
 public class Comment {
-	private int stu_phone;
+	private String stu_email;
 	private String cou_id;
 	private String com_text;
 	private Date com_date;
 	private float com_star;
-	public int getStu_phone() {
-		return stu_phone;
+	public String getStu_email() {
+		return stu_email;
 	}
-	public void setStu_phone(int stu_phone) {
-		this.stu_phone = stu_phone;
+	public void setStu_email(String stu_email) {
+		this.stu_email = stu_email;
 	}
 	public String getCou_id() {
 		return cou_id;
@@ -38,5 +38,6 @@ public class Comment {
 	public void setCom_star(float com_star) {
 		this.com_star = com_star;
 	}
+	
 	
 }
