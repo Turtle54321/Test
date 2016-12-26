@@ -1,17 +1,20 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>课程评价</title>
 </head>
 <link rel="stylesheet" href="../commentView_files/css/main.css">
 <link rel="stylesheet"
 	href="../commentView_files/css/comment.css">
 <style>
+
 #writecomment {
 	width: 60%;
 	height: 500px;
-	margin: 2% 0 0 20%;
+	margin: 0 0 0 20%;
 	background-color: #fff;
 }
 
@@ -25,8 +28,10 @@ textarea:hover {
 }
 </style>
 <body>
+
 	<div id="content">
 		<div id="body">
+		<br><br>
 			<div id="writecomment">
 				<div id="center">
 					<div class="teacher-content-header teacher-comment-header">
@@ -42,7 +47,7 @@ textarea:hover {
 						</ul>
 						<br>
 						<input id="score" type="hidden" name="score" />
-						<textarea id="comment" rows="5" cols="60"></textarea>
+						<textarea id="comment" rows="5" cols="60" name = "content"></textarea>
 						<br> <input class="btn btn-primary" type="submit"
 							style="margin-left: 60%" name="提交评价" />
 					</form>

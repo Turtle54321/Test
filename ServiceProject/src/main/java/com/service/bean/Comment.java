@@ -1,6 +1,6 @@
 package com.service.bean;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Comment {
 	private String stu_email;

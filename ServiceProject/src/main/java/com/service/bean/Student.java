@@ -2,7 +2,7 @@ package com.service.bean;
 
 public class Student {
 	private String stu_email;
-	private String stu_nickname;
+	private String stu_nikename;
 	private String stu_password;
 	private String stu_sex;
 	private String stu_name;
@@ -14,11 +14,11 @@ public class Student {
 	public void setStu_email(String stu_email) {
 		this.stu_email = stu_email;
 	}
-	public String getStu_nickname() {
-		return stu_nickname;
+	public String getStu_nikename() {
+		return stu_nikename;
 	}
-	public void setStu_nickname(String stu_nickname) {
-		this.stu_nickname = stu_nickname;
+	public void setStu_nikename(String stu_nikename) {
+		this.stu_nikename = stu_nikename;
 	}
 	public String getStu_password() {
 		return stu_password;
@@ -50,6 +50,7 @@ public class Student {
 	public void setStu_inter(String stu_inter) {
 		this.stu_inter = stu_inter;
 	}
+	
 	
 	
 }

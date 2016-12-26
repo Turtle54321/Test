@@ -5,12 +5,27 @@
 <!--[if IE 9 ]><html lang="zh-CN" class="ie9"><![endif]-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="../commentView_files/main.css">
+<link rel="stylesheet" href="../commentView_files/css/main.css">
 <title>评价列表</title>
 <meta name="applicable-device" content="pc">
-<link rel="stylesheet"
-	href="../commentView_files/comment_eaaf64a56a.css">
+<link rel="stylesheet" href="../commentView_files/css/comment.css">
+<style>
+.bg {
+	display: inline-block;
+	width: 93px;
+	height: 16px;
+	background: url(./bg.png);
+}
 
+.starview {
+	display: inline-block;
+	left: 0;
+	top: 0;
+	background: url(./starview.png);
+	width: 0;
+	height: 16px;
+}
+</style>
 </head>
 <body>
 	<div id="content">
@@ -27,12 +42,15 @@
 									<button class="btn btn-primary" id="comment-more">写评价</button>
 								</div>
 								<div class="score">
-									<strong>5.0</strong><span class="star-score"><i
-										class="icon icon-star star-shine"></i><i
-										class="icon icon-star star-shine"></i><i
-										class="icon icon-star star-shine"></i><i
-										class="icon icon-star star-shine"></i><i
-										class="icon icon-star star-shine"></i></span>
+									<strong>5.0</strong> 
+									<span class="bg"> <span
+										class="starview" id="star"></span>
+									</span>
+
+									<script>
+            						var star = document.getElementById("star");
+            						star.style.width = "100%";
+        							</script>
 								</div>
 								<div class="detail single">
 									<div class="star-comment">主动评价星级分布</div>
@@ -87,7 +105,7 @@
 											<dt>
 												<a href="http://www.genshuixue.com/x/962656208"
 													target="_blank"><b class="avatar-small"><img
-														src="../commentView_files/30530_8bzjq1xy.jpeg@1e_60w_60h_1c_0i_1o_90Q_1x.jpeg"
+														src="../commentView_files/image/30530_8bzjq1xy.jpeg@1e_60w_60h_1c_0i_1o_90Q_1x.jpeg"
 														alt="头像" width="60" height="60"></b></a>
 												<div class="user-name">草萍</div>
 											</dt>
@@ -111,11 +129,8 @@
 									<div class="item">
 										<dl>
 											<dt>
-												<a href="http://www.genshuixue.com/x/582549038"
-													target="_blank"><b class="avatar-small"><img
-														src="../commentView_files/11035222_lv32fy2c.jpeg@1e_60w_60h_1c_0i_1o_90Q_1x.jpeg"
-														alt="头像" width="60" height="60"></b></a>
-												<div class="user-name">然儿</div>
+
+												<div class="content">然儿</div>
 											</dt>
 										</dl>
 										<div class="comment">

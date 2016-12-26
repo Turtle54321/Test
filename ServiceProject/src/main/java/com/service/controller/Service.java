@@ -16,11 +16,11 @@ public class Service {
 	//url为stu_login.do时，自动转入此函数
 	@RequestMapping("/stu_login")
 	//同名的form表单参数可自动赋值
-	public String stu_login(int stu_phone, String stu_password, Model model){
+	public String stu_login(String stu_email, String stu_password, Model model){
 		//通过相应bean id获取DAO类
 		StudentDAO stuDAO = (StudentDAO)MyBeansFactory.getBeans("studentdao");
 		//从数据库中获取相应数据，可在com.service.dao包中自定义SQL语句
-		Student student = stuDAO.getStuByPhoAndPas(stu_phone, stu_password);
+		Student student = stuDAO.getStuByPhoAndPas(stu_email, stu_password);
 		if(student != null){
 			//自定义返回界面
 			return "welcome.html";
